@@ -1,0 +1,312 @@
+[
+    {
+        "id": 0,
+        "title": "I'm Glad My Mom Died",
+        "author": "Jennette McCurdy",
+        "cover": "https://cdn.thestorygraph.com/mp83bawsdrp5gdeu9kuod5lmydqf",
+        "genre": "non-fiction, memoir",
+        "rating": 5.0,
+        "keywords": "emotional, honest, funny",
+        "date": "2024-01-06"
+    },
+    {
+        "id": 1,
+        "title": "Remarkably Bright Creatures",
+        "author": "Shelby Van Pelt",
+        "cover": "https://cdn.thestorygraph.com/4d9e4kr9wv4hucleis6bekcl8x4x",
+        "genre": "fiction, literary, mystery",
+        "rating": 3.5,
+        "keywords": "intriguing, cozy, family",
+        "date": "2024-01-19"
+    },
+    {
+        "id": 2,
+        "title": "Bad Cree",
+        "author": "Jessica Johns",
+        "cover": "https://cdn.thestorygraph.com/yajdcqcl3admiucjvyep56w8375o",
+        "genre": "horror, literary, magical realism",
+        "rating": 4.25,
+        "keywords": "atmospheric, tense, mysterious",
+        "date": "2024-01-25"
+    },
+    {
+        "id": 3,
+        "title": "Emily Wilde's Encyclopaedia of Faeries",
+        "author": "Heather Fawcett",
+        "cover": "https://cdn.thestorygraph.com/xurn4bx0dmtsb1fqwm1ac6dnsrpa",
+        "genre": "fantasy, adventure",
+        "rating": 4.0,
+        "keywords": "funny, rich, adventurous",
+        "date": "2024-01-31"
+    },
+    {
+        "id": 4,
+        "title": "The Book That Wouldn't Burn",
+        "author": "Mark Lawrence",
+        "cover": "https://cdn.thestorygraph.com/fmx2u15z2px6pnvlnc9rm4hscrrc",
+        "genre": "fantasy, adventure",
+        "rating": 3.25,
+        "keywords": "mysterious, rich, tense",
+        "date": "2024-02-12"
+    },
+    {
+        "id": 5,
+        "title": "The Giver",
+        "author": "Lois Lowry",
+        "cover": "https://cdn.thestorygraph.com/vg8lg2dzesuk561y1pgkq072xe2q",
+        "genre": "young adult, dystopia, science fiction",
+        "rating": 5.0,
+        "keywords": "rich, intriguing, complex",
+        "date": "2024-02-16"
+    },
+    {
+        "id": 6,
+        "title": "Gathering Blue",
+        "author": "Lois Lowry",
+        "cover": "https://cdn.thestorygraph.com/zlilltnenk24kca8yhz26lnzb5b8",
+        "genre": "young adult, dystopia",
+        "rating": 4.5,
+        "keywords": "rich, intriguing, emotional",
+        "date": "2024-02-19"
+    },
+    {
+        "id": 7,
+        "title": "Messenger",
+        "author": "Lois Lowry",
+        "cover": "https://cdn.thestorygraph.com/ie61q8ppyi7a9h26plfou82qwevp",
+        "genre": "young adult, dystopia",
+        "rating": 4.5,
+        "keywords": "adventurous, intriguing, mysterious",
+        "date": "2024-02-22"
+    },
+    {
+        "id": 8,
+        "title": "What Moves the Dead",
+        "author": "T. Kingfisher",
+        "cover": "https://cdn.thestorygraph.com/hicxgqz1uyanuh0zc53sjfl1898g",
+        "genre": "fiction, horror, magical realism",
+        "rating": 4.0,
+        "keywords": "atmospheric, tense, mysterious",
+        "date": "2024-02-28"
+    },
+    {
+        "id": 9,
+        "title": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+        "author": "Neil Gaiman, Terry Pratchett",
+        "cover": "https://cdn.thestorygraph.com/yvjlu31bdnx5o3vx3cue0avga0mj",
+        "genre": "fiction, fantasy",
+        "rating": 5.0,
+        "keywords": "funny, cozy, adventurous",
+        "date": "2024-03-02"
+    },
+    {
+        "id": 10,
+        "title": "Emily Wilde's Map of the Otherlands",
+        "author": "Heather Fawcett",
+        "cover": "https://cdn.thestorygraph.com/0hz540e8kkbyn1x8sqvco859fdk9",
+        "genre": "fiction, fantasy",
+        "rating": 3.25,
+        "keywords": "funny, lighthearted, adventurous",
+        "date": "2024-03-05"
+    },
+    {
+        "id": 11,
+        "title": "The Outsiders",
+        "author": "S.E. Hinton",
+        "cover": "https://cdn.thestorygraph.com/t4kznci5hvnydkq3icq0o8e1rt6u",
+        "genre": "fiction, classics, contemporary",
+        "rating": 5.0,
+        "keywords": "honest, emotional, family",
+        "date": "2024-03-07"
+    },
+    {
+        "id": 12,
+        "title": "The Warm Hands of Ghosts",
+        "author": "Katherine Arden",
+        "cover": "https://cdn.thestorygraph.com/yuteghznbgqzy5huxziy2znw5kkq",
+        "genre": "fiction, historical, fantasy",
+        "rating": 5.0,
+        "keywords": "emotional, dark, historical",
+        "date": "2024-03-20"
+    },
+    {
+        "id": 13,
+        "title": "How to Solve Your Own Murder",
+        "author": "Kristen Perrin",
+        "cover": "https://cdn.thestorygraph.com/77g7aag5r3z37xihjvmpnqb48l9m",
+        "genre": "fiction, adventurous, mystery",
+        "rating": 5.0,
+        "keywords": "emotional, funny, intriguing",
+        "date": "2024-03-26"
+    },
+    {
+        "id": 14,
+        "title": "The Adventures of Amina al-Sirafi",
+        "author": "S.A. Chakraborty",
+        "cover": "https://cdn.thestorygraph.com/i2o3gdasb7nrt9bmb5n2do4x116g",
+        "genre": "fiction, fantasy, historical",
+        "rating": 5.0,
+        "keywords": "funny, mysterious, adventurous",
+        "date": "2024-04-03"
+    },
+    {
+        "id": 15,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 16,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 17,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 18,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 19,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 20,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 21,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 22,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 23,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 24,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 25,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 26,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 27,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 28,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 29,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    },
+    {
+        "id": 30,
+        "title": "",
+        "author": "",
+        "cover": "",
+        "genre": "",
+        "rating": 5.0,
+        "keywords": "",
+        "date": ""
+    }
+]
