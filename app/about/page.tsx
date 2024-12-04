@@ -4,7 +4,6 @@ import * as React from "react";
 import { RatingDisplay } from "@fluentui/react-rating";
 
 
-
 export default function Page() {
   return (
     <div>
@@ -15,3 +14,4 @@ export default function Page() {
     </div>
   );
 };
+

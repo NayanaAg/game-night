@@ -5,9 +5,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.css";
 import GlobalNav from "./components/nav";
 import Library from "./library.json";
-import { Rating, RatingDisplay } from '@fluentui/react-rating';
 
+import { createRoot } from 'react-dom/client';
+import { FluentProvider, webLightTheme, RatingDisplay } from '@fluentui/react-components';
 
+const root = createRoot(document.getElementById('root'));
+
+root.render(
+        <FluentProvider theme={webLightTheme}>
+          <RatingDisplay />
+        </FluentProvider>,
+      );
+      
 export default function Page() {
 
     const reviewBook = Library.at(-1);
@@ -60,8 +69,7 @@ export default function Page() {
                                 </div>
                                 <div className="col-6">
 
-                                 <RatingDisplay value={1.0} />
-
+                                <RatingDisplay value={4} />
                                 </div>
                             </div>
                         </div>
@@ -70,4 +78,6 @@ export default function Page() {
             </main>
         </div >
     </>
+    
 }
+

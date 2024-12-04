@@ -13,7 +13,8 @@
   "author": "Nayana Agrawal",
   "license": "ISC",
   "dependencies": {
-    "@fluentui/react-rating": "^9.0.22",
+    "@fluentui/react-components": "^9.56.3",
+    "@fluentui/web-components": "^2.6.1",
     "bootstrap": "^5.3.3",
     "formik": "^2.4.6",
     "next": "^15.0.3",
