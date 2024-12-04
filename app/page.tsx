@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.css";
 import GlobalNav from "./components/nav";
 import Library from "./library.json";
+import { Rating, RatingDisplay } from '@fluentui/react-rating';
+
 
 export default function Page() {
 
@@ -57,7 +59,9 @@ export default function Page() {
                                     <img className="review-cover" src={reviewBook.cover} />
                                 </div>
                                 <div className="col-6">
-                                
+
+                                 <RatingDisplay value={1.0} />
+
                                 </div>
                             </div>
                         </div>
