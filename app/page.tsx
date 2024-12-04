@@ -6,22 +6,14 @@ import "./global.css";
 import GlobalNav from "./components/nav";
 import Library from "./library.json";
 
-import { createRoot } from 'react-dom/client';
 import { FluentProvider, webLightTheme, RatingDisplay } from '@fluentui/react-components';
 
-const root = createRoot(document.getElementById('root'));
-
-root.render(
-        <FluentProvider theme={webLightTheme}>
-          <RatingDisplay />
-        </FluentProvider>,
-      );
-      
 export default function Page() {
 
     const reviewBook = Library.at(-1);
 
     return <>
+
         <div id="container">
             <GlobalNav />
 
@@ -41,20 +33,18 @@ export default function Page() {
                 <section>
                     <div className="row row-cols-5 m-5 align-items-start justify-content-center flex-row">
                         {Library.slice(0, 5).map((book) => {
-                            return <>
-                                <div className="col">
-                                    <div key={book.id} className="tile-book p-0">
-                                        <a href="./reviews">
-                                            <img className="tile-book-cover" src={book.cover}
-                                                alt="book cover" />
-                                            <div className="tile-book-content d-flex flex-column">
-                                                <h4>{book.title}</h4>
-                                                <p>{book.author}</p>
-                                            </div>
-                                        </a>
-                                    </div>
+                            return <div className="col" key={"book_" + book.id}>
+                                <div key={book.id} className="tile-book p-0">
+                                    <a href="./reviews">
+                                        <img className="tile-book-cover" src={book.cover}
+                                            alt="book cover" />
+                                        <div className="tile-book-content d-flex flex-column">
+                                            <h4>{book.title}</h4>
+                                            <p>{book.author}</p>
+                                        </div>
+                                    </a>
                                 </div>
-                            </>
+                            </div>
                         })}
                     </div>
                 </section>
@@ -68,8 +58,9 @@ export default function Page() {
                                     <img className="review-cover" src={reviewBook.cover} />
                                 </div>
                                 <div className="col-6">
-
-                                <RatingDisplay value={4} />
+                                    <FluentProvider theme={webLightTheme}>
+                                        <RatingDisplay value={4} />
+                                    </FluentProvider>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +68,8 @@ export default function Page() {
                 </section>
             </main>
         </div >
+
     </>
-    
+
 }
 
