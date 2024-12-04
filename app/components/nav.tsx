@@ -9,7 +9,7 @@ export default function GlobalNav() {
                         <ul>
                             <li><a href="./">home</a></li>
                             <li><a href="./reviews">reviews</a></li>
-                            <li><a href="./random-book">find your next read</a></li>
+                            <li><a href="#">find your next read</a></li>
                             <li><a href="./recommend">recommend a book</a></li>
                             <li><a href="./about">about</a></li>
                         </ul>

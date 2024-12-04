@@ -59,7 +59,7 @@ export default function Page() {
                                 </div>
                                 <div className="col-6">
                                     <FluentProvider theme={webLightTheme}>
-                                        <RatingDisplay value={4} />
+                                        <RatingDisplay value={reviewBook.rating} size="large" color="marigold" />
                                     </FluentProvider>
                                 </div>
                             </div>
