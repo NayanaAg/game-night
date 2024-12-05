@@ -33,8 +33,9 @@ export default function Page() {
                 <section>
                     <div className="row row-cols-5 m-5 align-items-start justify-content-center flex-row">
                         {Library.slice(0, 5).map((book) => {
-                            return <div className="col" key={"book_" + book.id}>
-                                <div key={book.id} className="tile-book p-0">
+                            return <>
+                            <div className="col" key={"book_" + book.id}>
+                                <div key={book.id} className="tile-book">
                                     <a href="./reviews">
                                         <img className="tile-book-cover" src={book.cover}
                                             alt="book cover" />
@@ -45,6 +46,7 @@ export default function Page() {
                                     </a>
                                 </div>
                             </div>
+                            </>
                         })}
                     </div>
                 </section>

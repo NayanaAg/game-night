@@ -6,6 +6,9 @@ import "../global.css";
 import GlobalNav from "../components/nav";
 import Library from "../library.json";
 
+import { FluentProvider, webLightTheme, RatingDisplay } from '@fluentui/react-components';
+
+
 export default function Page() {
     return <>
 
@@ -19,11 +22,34 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="row row-cols-5 m-5 p-5 align-items-start flex-row">
+            <div className="row row-cols-5 m-5 align-items-start flex-row">
                 {Library.map((book) => {
                     return <>
-                        <div className="col" key={book.id}>
-                            <img className="tile-book-cover" src={book.cover} />
+                        <div className="col p-3" key={"book_" + book.id}>
+                            <div data-bs-toggle="modal" data-bs-target="#book-modal">
+                                <img className="tile-book-cover" src={book.cover} />
+                            </div>
+
+                            <div className="modal fade" id="book-modal" tabIndex={-1} aria-labelledby="book-modal-label" aria-hidden="true">
+                                <div className="modal-dialog">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <h2 className="modal-title" id="book-modal-label">{book.title}</h2>
+                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div className="modal-body align-self-center">
+                                            <h3>By {book.author}</h3>
+                                            <FluentProvider theme={webLightTheme}>
+                                                <RatingDisplay value={book.rating} size="large" color="marigold" />
+                                            </FluentProvider>
+                                            <p>{book.keywords}</p>
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </>
                 })}
