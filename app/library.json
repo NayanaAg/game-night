@@ -278,5 +278,125 @@
         "rating": 3.0,
         "keywords": "emotional, mysterious, complex",
         "date": "2024-10-09"
+    },
+    {
+        "id": 28,
+        "title": "The God of the Woods",
+        "author": "Liz Moore",
+        "cover": "https://cdn.thestorygraph.com/ivllu1vpl45o3erx4uld85rtkz2h",
+        "genre": "mystery, historical, crime",
+        "rating": 3.75,
+        "keywords": "dark, mysterious, tense",
+        "date": "2024-10-15"
+    },
+    {
+        "id": 29,
+        "title": "James",
+        "author": "Percival Everett",
+        "cover": "https://cdn.thestorygraph.com/512mgxjxd7ywfer3hpu7sw1ryn7n",
+        "genre": "fiction, historical, literary",
+        "rating": 4.5,
+        "keywords": "adventurous, emotional, complex",
+        "date": "2024-10-19"
+    },
+    {
+        "id": 30,
+        "title": "The Searcher",
+        "author": "Tana French",
+        "cover": "https://cdn.thestorygraph.com/4fkx0jvlzorjhn60nppu6xdfrte9",
+        "genre": "fiction, mystery, thriller",
+        "rating": 4.0,
+        "keywords": "dark, mysterious, tense",
+        "date": "2024-10-22"
+    },
+    {
+        "id": 31,
+        "title": "The Hunter",
+        "author": "Tana French",
+        "cover": "https://cdn.thestorygraph.com/s671yqu0bdow05wrcxmlyhl5n99h",
+        "genre": "fiction, mystery, crime",
+        "rating": 3.5,
+        "keywords": "tense, emotional, dark",
+        "date": "2024-11-05"
+    },
+    {
+        "id": 32,
+        "title": "The City of Brass",
+        "author": "S.A. Chakraborty",
+        "cover": "https://cdn.thestorygraph.com/1onv8m839w86a1qo8qd7v4ntfmqf",
+        "genre": "romance, fantasy, historical",
+        "rating": 2.5,
+        "keywords": "adventurous, rich, mysterious",
+        "date": "2024-11-08"
+    },
+    {
+        "id": 33,
+        "title": "The Heaven & Earth Grocery Store",
+        "author": "James McBride",
+        "cover": "https://cdn.thestorygraph.com/mow5u7v3c7qd671lcvy9kmkksrfj",
+        "genre": "fiction, historical, literary",
+        "rating": 4.0,
+        "keywords": "emottional, tense, reflective",
+        "date": "2024-11-14"
+    },
+    {
+        "id": 34,
+        "title": "The Chalice of the Gods",
+        "author": "Rick Riordan",
+        "cover": "https://cdn.thestorygraph.com/lxaddv5zkzbqcayb8rx9qmicb8ue",
+        "genre": "young adult, fantasy, historical",
+        "rating": 5.0,
+        "keywords": "lighthearted, emotional, funny",
+        "date": "2024-11-18"
+    },
+    {
+        "id": 35,
+        "title": "The Measure",
+        "author": "Nikki Erlick",
+        "cover": "https://cdn.thestorygraph.com/vpp58q0t97qqxirbsummfk49tf5p",
+        "genre": "contemporary, speculative fiction",
+        "rating": 4.0,
+        "keywords": "honest, emotional, reflective",
+        "date": "2024-11-20"
+    },
+    {
+        "id": 36,
+        "title": "The Southern Book Club's Guide to Slaying Vampires",
+        "author": "Grady Hendrix",
+        "cover": "https://cdn.thestorygraph.com/1b22bpmfdrn17wm3il9bf1cf2uup",
+        "genre": "fiction, thriller, horror",
+        "rating": 4.0,
+        "keywords": "dark, mysterious, tense",
+        "date": "2024-11-24"
+    },
+    {
+        "id": 37,
+        "title": "All the Colors of the Dark",
+        "author": "Chris Whitaker",
+        "cover": "https://cdn.thestorygraph.com/99tolujyj7xwiwqjenptou4gexfk",
+        "genre": "fiction, mystery, thriller",
+        "rating": 3.75,
+        "keywords": "dark, emotional, mysterious",
+        "date": "2024-11-27"
+    },
+    {
+        "id": 38,
+        "title": "Everyone on This Train Is a Suspect",
+        "author": "Benjamin Stevenson",
+        "cover": "https://cdn.thestorygraph.com/ack8udmuwvn4engz5izg5s3oy2r7",
+        "genre": "fiction, crime, mystery",
+        "rating": 4.0,
+        "keywords": "intriguing, funny, adventurous",
+        "date": "2024-11-30"
+    },
+    {
+        "id": 39,
+        "title": "Demon Copperhead",
+        "author": "Barbara Kingsolver",
+        "cover": "https://cdn.thestorygraph.com/0n3vqrda74g4r6l1nhnjyal4gv2i",
+        "genre": "fiction, literary, retelling",
+        "rating": 4.5,
+        "keywords": "emotional, complex, dark",
+        "date": "2024-12-03"
     }
 ]
