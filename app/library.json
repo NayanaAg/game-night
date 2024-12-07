@@ -4,9 +4,9 @@
         "title": "I'm Glad My Mom Died",
         "author": "Jennette McCurdy",
         "cover": "https://cdn.thestorygraph.com/mp83bawsdrp5gdeu9kuod5lmydqf",
-        "genre": "non-fiction, memoir",
+        "genre": "non-fiction,memoir",
         "rating": 5.0,
-        "keywords": "emotional, honest, funny",
+        "keywords": "emotional,honest,funny",
         "date": "2024-01-06"
     },
     {
@@ -14,9 +14,9 @@
         "title": "Remarkably Bright Creatures",
         "author": "Shelby Van Pelt",
         "cover": "https://cdn.thestorygraph.com/4d9e4kr9wv4hucleis6bekcl8x4x",
-        "genre": "fiction, literary, mystery",
+        "genre": "fiction,literary,mystery",
         "rating": 3.5,
-        "keywords": "intriguing, cozy, family",
+        "keywords": "intriguing,cozy,family",
         "date": "2024-01-19"
     },
     {
@@ -24,9 +24,9 @@
         "title": "Bad Cree",
         "author": "Jessica Johns",
         "cover": "https://cdn.thestorygraph.com/yajdcqcl3admiucjvyep56w8375o",
-        "genre": "horror, literary, magical realism",
+        "genre": "horror,literary,magical-realism",
         "rating": 4.25,
-        "keywords": "atmospheric, tense, mysterious",
+        "keywords": "atmospheric,tense,mysterious",
         "date": "2024-01-25"
     },
     {
@@ -34,9 +34,9 @@
         "title": "Emily Wilde's Encyclopaedia of Faeries",
         "author": "Heather Fawcett",
         "cover": "https://cdn.thestorygraph.com/xurn4bx0dmtsb1fqwm1ac6dnsrpa",
-        "genre": "fantasy, adventure",
+        "genre": "fantasy,adventure",
         "rating": 4.0,
-        "keywords": "funny, rich, adventurous",
+        "keywords": "funny,rich,adventurous",
         "date": "2024-01-31"
     },
     {
@@ -44,9 +44,9 @@
         "title": "The Book That Wouldn't Burn",
         "author": "Mark Lawrence",
         "cover": "https://cdn.thestorygraph.com/fmx2u15z2px6pnvlnc9rm4hscrrc",
-        "genre": "fantasy, adventure",
+        "genre": "fantasy,adventure",
         "rating": 3.25,
-        "keywords": "mysterious, rich, tense",
+        "keywords": "mysterious,rich,tense",
         "date": "2024-02-12"
     },
     {
@@ -54,9 +54,9 @@
         "title": "The Giver",
         "author": "Lois Lowry",
         "cover": "https://cdn.thestorygraph.com/vg8lg2dzesuk561y1pgkq072xe2q",
-        "genre": "young adult, dystopia, science fiction",
+        "genre": "young-adult,dystopia,science-fiction",
         "rating": 5.0,
-        "keywords": "rich, intriguing, complex",
+        "keywords": "rich,intriguing,complex",
         "date": "2024-02-16"
     },
     {
@@ -64,9 +64,9 @@
         "title": "Gathering Blue",
         "author": "Lois Lowry",
         "cover": "https://cdn.thestorygraph.com/zlilltnenk24kca8yhz26lnzb5b8",
-        "genre": "young adult, dystopia",
+        "genre": "young-adult, dystopia",
         "rating": 4.5,
-        "keywords": "rich, intriguing, emotional",
+        "keywords": "rich,intriguing,emotional",
         "date": "2024-02-19"
     },
     {
@@ -74,9 +74,9 @@
         "title": "Messenger",
         "author": "Lois Lowry",
         "cover": "https://cdn.thestorygraph.com/ie61q8ppyi7a9h26plfou82qwevp",
-        "genre": "young adult, dystopia",
+        "genre": "young-adult,dystopia",
         "rating": 4.5,
-        "keywords": "adventurous, intriguing, mysterious",
+        "keywords": "adventurous,intriguing,mysterious",
         "date": "2024-02-22"
     },
     {
@@ -84,9 +84,9 @@
         "title": "What Moves the Dead",
         "author": "T. Kingfisher",
         "cover": "https://cdn.thestorygraph.com/hicxgqz1uyanuh0zc53sjfl1898g",
-        "genre": "fiction, horror, magical realism",
+        "genre": "fiction,horror,magical-realism",
         "rating": 4.0,
-        "keywords": "atmospheric, tense, mysterious",
+        "keywords": "atmospheric,tense,mysterious",
         "date": "2024-02-28"
     },
     {
@@ -94,9 +94,9 @@
         "title": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
         "author": "Neil Gaiman, Terry Pratchett",
         "cover": "https://cdn.thestorygraph.com/yvjlu31bdnx5o3vx3cue0avga0mj",
-        "genre": "fiction, fantasy",
+        "genre": "fiction,fantasy",
         "rating": 5.0,
-        "keywords": "funny, cozy, adventurous",
+        "keywords": "funny,cozy,adventurous",
         "date": "2024-03-02"
     },
     {
@@ -104,9 +104,9 @@
         "title": "Emily Wilde's Map of the Otherlands",
         "author": "Heather Fawcett",
         "cover": "https://cdn.thestorygraph.com/0hz540e8kkbyn1x8sqvco859fdk9",
-        "genre": "fiction, fantasy",
+        "genre": "fiction,fantasy",
         "rating": 3.25,
-        "keywords": "funny, lighthearted, adventurous",
+        "keywords": "funny,lighthearted,adventurous",
         "date": "2024-03-05"
     },
     {
@@ -114,9 +114,9 @@
         "title": "The Outsiders",
         "author": "S.E. Hinton",
         "cover": "https://cdn.thestorygraph.com/t4kznci5hvnydkq3icq0o8e1rt6u",
-        "genre": "fiction, classics, contemporary",
+        "genre": "fiction,classics,contemporary",
         "rating": 5.0,
-        "keywords": "honest, emotional, family",
+        "keywords": "honest,emotional,family",
         "date": "2024-03-07"
     },
     {
@@ -124,9 +124,9 @@
         "title": "The Warm Hands of Ghosts",
         "author": "Katherine Arden",
         "cover": "https://cdn.thestorygraph.com/yuteghznbgqzy5huxziy2znw5kkq",
-        "genre": "fiction, historical, fantasy",
+        "genre": "fiction,historical,fantasy",
         "rating": 5.0,
-        "keywords": "emotional, dark, historical",
+        "keywords": "emotional,dark,historical",
         "date": "2024-03-20"
     },
     {
@@ -134,9 +134,9 @@
         "title": "How to Solve Your Own Murder",
         "author": "Kristen Perrin",
         "cover": "https://cdn.thestorygraph.com/77g7aag5r3z37xihjvmpnqb48l9m",
-        "genre": "fiction, adventurous, mystery",
+        "genre": "fiction,adventure,mystery",
         "rating": 5.0,
-        "keywords": "emotional, funny, intriguing",
+        "keywords": "emotional,funny,intriguing",
         "date": "2024-03-26"
     },
     {
@@ -144,9 +144,9 @@
         "title": "The Adventures of Amina al-Sirafi",
         "author": "S.A. Chakraborty",
         "cover": "https://cdn.thestorygraph.com/i2o3gdasb7nrt9bmb5n2do4x116g",
-        "genre": "fiction, fantasy, historical",
+        "genre": "fiction,fantasy,historical",
         "rating": 5.0,
-        "keywords": "funny, mysterious, adventurous",
+        "keywords": "funny,mysterious,adventurous",
         "date": "2024-04-03"
     },
     {
@@ -154,9 +154,9 @@
         "title": "The Thursday Murder Club",
         "author": "Richard Osman",
         "cover": "https://cdn.thestorygraph.com/t6ft32umyvozm1otxldgxnsous5t",
-        "genre": "fiction, mystery, crime",
+        "genre": "fiction,mystery,crime",
         "rating": 4.25,
-        "keywords": "cozy, mysterious, funny",
+        "keywords": "cozy,mysterious,funny",
         "date": "2024-05-01"
     },
     {
@@ -164,9 +164,9 @@
         "title": "Exhalation",
         "author": "Ted Chiang",
         "cover": "https://cdn.thestorygraph.com/d5ikj67a037uqpv103mapy4w0msa",
-        "genre": "fiction, literary, science fiction",
+        "genre": "fiction,literary,science-fiction",
         "rating": 5.0,
-        "keywords": "complex, rich, philosophical",
+        "keywords": "complex,rich,philosophical",
         "date": "2024-05-10"
     },
     {
@@ -174,9 +174,9 @@
         "title": "The Covenant of Water",
         "author": "Abraham Verghese",
         "cover": "https://cdn.thestorygraph.com/nbo9b1v3nj2dx6fse0bh1jsxpdd2",
-        "genre": "fiction, historical, literary",
+        "genre": "fiction,historical,literary",
         "rating": 5.0,
-        "keywords": "emotional, family, rich",
+        "keywords": "emotional,family,rich",
         "date": "2024-05-24"
     },
     {
@@ -184,9 +184,9 @@
         "title": "The Ministry of Time",
         "author": "Kaliane Bradley",
         "cover": "https://cdn.thestorygraph.com/aae26rjtrj3eaeg9yyyryovt532f",
-        "genre": "fiction, science fiction, romance",
+        "genre": "fiction,science-fiction,romance",
         "rating": 3.5,
-        "keywords": "mysterious, funny, adventurous",
+        "keywords": "mysterious,funny,adventurous",
         "date": "2024-06-04"
     },
     {
@@ -194,9 +194,9 @@
         "title": "Cutting for Stone",
         "author": "Abraham Verghese",
         "cover": "https://cdn.thestorygraph.com/1c2fvb56kzbm5q22yjxflg80yhfs",
-        "genre": "fiction, historical, literary",
+        "genre": "fiction,historical,literary",
         "rating": 4.5,
-        "keywords": "emotional, family, complex",
+        "keywords": "emotional,family,complex",
         "date": "2024-07-20"
     },
     {
@@ -204,9 +204,9 @@
         "title": "A Sorceress Comes to Call",
         "author": "T. Kingfisher",
         "cover": "https://cdn.thestorygraph.com/c3ebexrk2pn0nsrjd8l1qhsp990o",
-        "genre": "fantasy, fiction, retelling",
+        "genre": "fantasy,fiction,retelling",
         "rating": 4.0,
-        "keywords": "dark, mysterious, tense",
+        "keywords": "dark,mysterious,tense",
         "date": "2024-07-31"
     },
     {
@@ -214,9 +214,9 @@
         "title": "Life After Life",
         "author": "Kate Atkinson",
         "cover": "https://cdn.thestorygraph.com/sb0940nz9uwksy16vgt7oblcvlcx",
-        "genre": "fiction, historical, magical realism",
+        "genre": "fiction,historical,magical-realism",
         "rating": 4.0,
-        "keywords": "emotional, reflective, honest",
+        "keywords": "emotional,reflective,honest",
         "date": "2024-08-15"
     },
     {
@@ -224,9 +224,9 @@
         "title": "The Will of the Many",
         "author": "James Islington",
         "cover": "https://cdn.thestorygraph.com/pizr29x3shod72m1xna4x9y2g2u5",
-        "genre": "fiction, fantasy",
+        "genre": "fiction,fantasy",
         "rating": 4.0,
-        "keywords": "adventurous, mysterious, engaging",
+        "keywords": "adventurous,mysterious,engaging",
         "date": "2024-09-03"
     },
     {
@@ -234,9 +234,9 @@
         "title": "Little Fires Everywhere",
         "author": "Celeste Ng",
         "cover": "https://cdn.thestorygraph.com/3daq8bvsunrkv38r7zkoy5q8e9ps",
-        "genre": "fiction, contemporary, literary",
+        "genre": "fiction,contemporary,literary",
         "rating": 5.0,
-        "keywords": "emotional, family, complex",
+        "keywords": "emotional,family,complex",
         "date": "2024-09-11"
     },
     {
@@ -244,9 +244,9 @@
         "title": "The School for Good and Evil",
         "author": "Soman Chainani",
         "cover": "https://cdn.thestorygraph.com/1ezwf6ve99n32vde60bjsmg6mp6o",
-        "genre": "fantasy, young adult",
+        "genre": "fantasy,young-adult",
         "rating": 2.0,
-        "keywords": "magical, coming of age, mysterious",
+        "keywords": "magical,family,mysterious",
         "date": "2024-09-16"
     },
     {
@@ -254,9 +254,9 @@
         "title": "A God in Ruins",
         "author": "Kate Atkinson",
         "cover": "https://cdn.thestorygraph.com/pgi3p6ufxg6h0mpfvvqz9lsur5ou",
-        "genre": "fiction, historical, literary",
+        "genre": "fiction,historical,literary",
         "rating": 3.0,
-        "keywords": "complex, emotional, philosophical",
+        "keywords": "complex,emotional,philosophical",
         "date": "2024-09-25"
     },
     {
@@ -264,9 +264,9 @@
         "title": "one of This is True",
         "author": "Lisa Jewell",
         "cover": "https://cdn.thestorygraph.com/f25hu0y3j31kcl8xq41znylaht43",
-        "genre": "fiction, mystery, thriller",
+        "genre": "fiction,mystery,thriller",
         "rating": 4.0,
-        "keywords": "tense, mysterious, dark",
+        "keywords": "tense,mysterious,dark",
         "date": "2024-10-05"
     },
     {
@@ -274,9 +274,9 @@
         "title": "The Frozen River",
         "author": "Ariel Lawhon",
         "cover": "https://cdn.thestorygraph.com/15583cs0991yafkzltxhea6x2o6a",
-        "genre": "fiction, historical, retelling",
+        "genre": "fiction,historical,retelling",
         "rating": 3.0,
-        "keywords": "emotional, mysterious, complex",
+        "keywords": "emotional,mysterious,complex",
         "date": "2024-10-09"
     },
     {
@@ -284,9 +284,9 @@
         "title": "The God of the Woods",
         "author": "Liz Moore",
         "cover": "https://cdn.thestorygraph.com/ivllu1vpl45o3erx4uld85rtkz2h",
-        "genre": "mystery, historical, crime",
+        "genre": "mystery,historical,crime",
         "rating": 3.75,
-        "keywords": "dark, mysterious, tense",
+        "keywords": "dark,mysterious,tense",
         "date": "2024-10-15"
     },
     {
@@ -294,9 +294,9 @@
         "title": "James",
         "author": "Percival Everett",
         "cover": "https://cdn.thestorygraph.com/512mgxjxd7ywfer3hpu7sw1ryn7n",
-        "genre": "fiction, historical, literary",
+        "genre": "fiction,historical,literary",
         "rating": 4.5,
-        "keywords": "adventurous, emotional, complex",
+        "keywords": "adventurous,emotional,complex",
         "date": "2024-10-19"
     },
     {
@@ -304,9 +304,9 @@
         "title": "The Searcher",
         "author": "Tana French",
         "cover": "https://cdn.thestorygraph.com/4fkx0jvlzorjhn60nppu6xdfrte9",
-        "genre": "fiction, mystery, thriller",
+        "genre": "fiction,mystery,thriller",
         "rating": 4.0,
-        "keywords": "dark, mysterious, tense",
+        "keywords": "dark,mysterious,tense",
         "date": "2024-10-22"
     },
     {
@@ -314,9 +314,9 @@
         "title": "The Hunter",
         "author": "Tana French",
         "cover": "https://cdn.thestorygraph.com/s671yqu0bdow05wrcxmlyhl5n99h",
-        "genre": "fiction, mystery, crime",
+        "genre": "fiction,mystery,crime",
         "rating": 3.5,
-        "keywords": "tense, emotional, dark",
+        "keywords": "tense,emotional,dark",
         "date": "2024-11-05"
     },
     {
@@ -324,9 +324,9 @@
         "title": "The City of Brass",
         "author": "S.A. Chakraborty",
         "cover": "https://cdn.thestorygraph.com/1onv8m839w86a1qo8qd7v4ntfmqf",
-        "genre": "romance, fantasy, historical",
+        "genre": "romance,fantasy,historical",
         "rating": 2.5,
-        "keywords": "adventurous, rich, mysterious",
+        "keywords": "adventurous,rich,mysterious",
         "date": "2024-11-08"
     },
     {
@@ -334,9 +334,9 @@
         "title": "The Heaven & Earth Grocery Store",
         "author": "James McBride",
         "cover": "https://cdn.thestorygraph.com/mow5u7v3c7qd671lcvy9kmkksrfj",
-        "genre": "fiction, historical, literary",
+        "genre": "fiction,historical,literary",
         "rating": 4.0,
-        "keywords": "emottional, tense, reflective",
+        "keywords": "emotional,tense,reflective",
         "date": "2024-11-14"
     },
     {
@@ -344,9 +344,9 @@
         "title": "The Chalice of the Gods",
         "author": "Rick Riordan",
         "cover": "https://cdn.thestorygraph.com/lxaddv5zkzbqcayb8rx9qmicb8ue",
-        "genre": "young adult, fantasy, historical",
+        "genre": "young-adult,fantasy,historical",
         "rating": 5.0,
-        "keywords": "lighthearted, emotional, funny",
+        "keywords": "lighthearted,emotional,funny",
         "date": "2024-11-18"
     },
     {
@@ -354,9 +354,9 @@
         "title": "The Measure",
         "author": "Nikki Erlick",
         "cover": "https://cdn.thestorygraph.com/vpp58q0t97qqxirbsummfk49tf5p",
-        "genre": "contemporary, speculative fiction",
+        "genre": "contemporary,speculative-fiction",
         "rating": 4.0,
-        "keywords": "honest, emotional, reflective",
+        "keywords": "honest,emotional,reflective",
         "date": "2024-11-20"
     },
     {
@@ -364,9 +364,9 @@
         "title": "The Southern Book Club's Guide to Slaying Vampires",
         "author": "Grady Hendrix",
         "cover": "https://cdn.thestorygraph.com/1b22bpmfdrn17wm3il9bf1cf2uup",
-        "genre": "fiction, thriller, horror",
+        "genre": "fiction,thriller,horror",
         "rating": 4.0,
-        "keywords": "dark, mysterious, tense",
+        "keywords": "dark,mysterious,tense",
         "date": "2024-11-24"
     },
     {
@@ -374,9 +374,9 @@
         "title": "All the Colors of the Dark",
         "author": "Chris Whitaker",
         "cover": "https://cdn.thestorygraph.com/99tolujyj7xwiwqjenptou4gexfk",
-        "genre": "fiction, mystery, thriller",
+        "genre": "fiction,mystery,thriller",
         "rating": 3.75,
-        "keywords": "dark, emotional, mysterious",
+        "keywords": "dark,emotional,mysterious",
         "date": "2024-11-27"
     },
     {
@@ -384,9 +384,9 @@
         "title": "Everyone on This Train Is a Suspect",
         "author": "Benjamin Stevenson",
         "cover": "https://cdn.thestorygraph.com/ack8udmuwvn4engz5izg5s3oy2r7",
-        "genre": "fiction, crime, mystery",
+        "genre": "fiction,crime,mystery",
         "rating": 4.0,
-        "keywords": "intriguing, funny, adventurous",
+        "keywords": "intriguing,funny,adventurous",
         "date": "2024-11-30"
     },
     {
@@ -394,9 +394,9 @@
         "title": "Demon Copperhead",
         "author": "Barbara Kingsolver",
         "cover": "https://cdn.thestorygraph.com/0n3vqrda74g4r6l1nhnjyal4gv2i",
-        "genre": "fiction, literary, retelling",
+        "genre": "fiction,literary,retelling",
         "rating": 4.5,
-        "keywords": "emotional, complex, dark",
+        "keywords": "emotional,complex,dark",
         "date": "2024-12-03"
     }
 ]
