@@ -43,7 +43,7 @@ export default function Page() {
 
             <div className="row row-cols-4 mx-5 my-4">
 
-                {shuffledLibrary.map((book) => {
+                {Library.map((book) => {
 
                     if (book.genre.indexOf(filter) === -1) {
                         return <></>
