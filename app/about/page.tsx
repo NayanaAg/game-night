@@ -1,17 +1,23 @@
 "use client";
 
 import * as React from "react";
-import { RatingDisplay } from "@fluentui/react-rating";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../global.css";
+import GlobalNav from "../components/nav";
 
 export default function Page() {
-  return (
-    <div>
-      <RatingDisplay value={1} />
-      <RatingDisplay value={3.7} />
-      <RatingDisplay value={3.9} />
-      <RatingDisplay value={5} />
+  return <>
+    <div id="container">
+      <GlobalNav />
+      
+      <div className="row">
+        <div className="col-10 offset-1">
+          <h1>About Me</h1>
+          <p>Another fun website by Nayana.</p>
+        </div>
+      </div>
     </div>
-  );
+  
+  </>
 };
 

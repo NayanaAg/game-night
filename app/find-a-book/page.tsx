@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
 import GlobalNav from "../components/nav";
 import Library from "../library.json";
-import { Display } from "@fluentui/react-components";
+import { RatingDisplay } from "@fluentui/react-components";
 
 export default function Page() {
 
@@ -37,27 +37,25 @@ export default function Page() {
                         }>{genre}</a>
                     )}
 
-                    <a href="#" onClick={(e) => {
-                        setFilter("");
-                    }}>Clear all</a>
+                    <a href="#">Clear all</a>
                 </div>
             </div>
 
-            <div className="row row-cols-5">
+            <div className="row row-cols-4 mx-5 my-4">
 
-                {shuffledLibrary.slice(0,3).map((book) => {
+                {shuffledLibrary.map((book) => {
 
                     if (book.genre.indexOf(filter) === -1) {
                         return <></>
                     }
-
+                    
                     return <>
 
                         <div className="col">
                             <div key={book.id} className="tile-book p-0">
                                 <a href="#">
                                     <img className="tile-book-cover" src={book.cover} />
-                                    <div className="tile-book-content d-flex flex-row justify-content-between">
+                                    <div className="tile-book-content d-flex flex-column justify-content-between">
                                         <h3>{book.title}</h3>
                                         <p>{book.author}</p>
                                     </div>
