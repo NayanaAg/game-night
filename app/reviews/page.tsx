@@ -25,12 +25,12 @@ export default function Page() {
             <div className="row row-cols-5 m-5 align-items-start flex-row">
                 {Library.map((book) => {
                     return <>
-                        <div className="col p-3" key={"book_" + book.id}>
-                            <div data-bs-toggle="modal" data-bs-target="#book-modal">
+                        <div className="col p-3 justify-content-center tile-book" key={"book_" + book.id}>
+                            <div data-bs-toggle="modal" data-bs-target={"#book_" + (book.id).toString()}>
                                 <img className="tile-book-cover" src={book.cover} />
                             </div>
 
-                            <div className="modal fade" id="book-modal" tabIndex={-1} aria-labelledby="book-modal-label" aria-hidden="true">
+                            <div className="modal fade" id={"book_" + (book.id).toString()} tabIndex={-1} aria-labelledby="book-modal-label" aria-hidden="true">
                                 <div className="modal-dialog">
                                     <div className="modal-content">
                                         <div className="modal-header">

@@ -53,8 +53,8 @@ h3 {
 }
 
 .tile-book hover {
-    box-shadow: var(--drop-shadow);
-    cursor: pointer;
+    box-shadow: var(--drop-shadow) !important;
+    cursor: pointer !important;
 }
 
 .tile-book a {
