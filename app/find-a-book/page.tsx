@@ -47,19 +47,13 @@ export default function Page() {
 
                     if (book.genre.indexOf(filter) === -1) {
                         return <></>
+                    } else {
+                        length += 1;
                     }
 
-                    shuffledLibrary.forEach((book, length) => {
-                        if (book.genre.indexOf(filter) != -1)
-                            length += 1;
-                        return length
-                    })
-
-                    if (length > 5) {
+                    if (length >= 5) {
                         return <></>
                     }
-                    
-
 
                     return <>
 
