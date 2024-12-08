@@ -43,12 +43,24 @@ export default function Page() {
 
             <div className="row row-cols-4 mx-5 my-4">
 
-                {Library.map((book) => {
+                {shuffledLibrary.map((book, length) => {
 
                     if (book.genre.indexOf(filter) === -1) {
                         return <></>
                     }
+
+                    shuffledLibrary.forEach((book, length) => {
+                        if (book.genre.indexOf(filter) != -1)
+                            length += 1;
+                        return length
+                    })
+
+                    if (length > 5) {
+                        return <></>
+                    }
                     
+
+
                     return <>
 
                         <div className="col">
@@ -62,6 +74,7 @@ export default function Page() {
                                 </a>
                             </div>
                         </div>
+
                     </>
 
                 })}
