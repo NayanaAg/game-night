@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
 import GlobalNav from "../components/nav";
 import GenreChart from "../components/piechart";
+import RatingChart from "../components/barchart";
+import { Rating } from "@fluentui/react-components";
 
 export default function Page() {
   return <>
@@ -19,16 +21,29 @@ export default function Page() {
       </div>
 
       <section>
-        <div className="row mt-5">
-          <div className="col-4 offset-1">
+        <div className="row mt-lg-5">
+          <div className="col-lg-4 ms-lg-5 col-12">
             <GenreChart />
 
           </div>
-          <div className="col-5">
+          <div className="col-lg-4 mt-lg-5 m-3 p-3 col-12">
             <h2>Genre spread</h2>
             <p>This year, my top 3 genres have been historical, mystery, and literary! I would include Fiction but turns out I didn't read much non-fiction this year lol, so it stays out of our count despite being in first place.</p>
 
             <p>I was surprised to see that my science fiction and speculative fiction counts are so low this year; I usually end up reading a good handful of each genre over the year, but looks like this year I was craving something more down-to-earth.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="row mt-5">
+          <div className="col-lg-4 ms-lg-5 col-12">
+            <RatingChart />
+          </div>
+
+          <div className="col-lg-4 mt-lg-5 m-3 p-3 col-12">
+            <h2>Ratings</h2>
+
           </div>
         </div>
       </section>

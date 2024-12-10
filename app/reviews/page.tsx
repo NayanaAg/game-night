@@ -23,7 +23,7 @@ export default function Page() {
             </div>
 
             <div className="container-fluid d-flex justify-content-center">
-                <div className="row row-cols-5 text-center tile-container">
+                <div className="row row-cols-lg-5 text-center tile-container">
                     {Library.map((book) => {
                         return <>
                             <div className="col tile-book text-center" key={"book_" + book.id}>

@@ -3,7 +3,9 @@ import Library from "../library.json";
 
 export default function DataGenerator(property) {
 
-    const extractValues = Library.map(book => book[(property)])
+    const sortedLibrary = Library.sort((a, b) => a.rating - b.rating)
+
+    const extractValues = sortedLibrary.map(book => book[(property)])
     const allValues = extractValues.join().split(",")
     const uniqueValues = [...new Set(allValues)]
 

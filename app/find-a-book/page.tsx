@@ -42,39 +42,36 @@ export default function Page() {
             <GlobalNav />
 
             <div className="row">
-                <div className="col-10 offset-1">
+                <div className="col-10 offset-1 text-center mt-5">
                     <h1>My book recommendations</h1>
+                    <p>Click one of the buttons below to begin!</p>
                     <p></p>
                 </div>
             </div>
 
-            <div className="row mt-5">
-                <div className="col-10 offset-1">
+            <div className="row mt-4 text-center">
+                <div className="col-lg-5 mx-auto col-10 offset-1">
                     {uniqueGenres.map(genre =>
-                        <a href="#" className={"btn p-3 m-2 btn-primary " + (genre === filter ? "btn-focus" : "")} id="genre" onClick={(e) => { setFilter(genre) }
+                        <a href="#" className={"btn p-2 m-2 btn-primary " + (genre === filter ? "btn-focus" : "")} id="genre" onClick={(e) => { setFilter(genre) }
                         }>{genre}</a>
                     )}
-
-                    <a href="#">Clear all</a>
                 </div>
             </div>
 
-            <div className="container-fluid mt-3 d-flex justify-content-center">
-                <div className="row row-cols-5 text-center tile-container">
+            <div className="container-fluid mt-5 d-flex justify-content-center">
+                <div className="row row-cols-lg-5 text-center tile-container">
                     {library.map((book, length) => {
-                        return <>
-                            <div className="col" key={"book_" + book.id}>
-                                <div className="tile-book p-0">
-                                    <a href="#">
-                                        <img className="tile-book-cover" src={book.cover} />
-                                        <div className="tile-book-content d-flex flex-column">
-                                            <h3>{book.title}</h3>
-                                            <p>{book.author}</p>
-                                        </div>
-                                    </a>
-                                </div>
+                        return <div className="col" key={"book_" + book.id}>
+                            <div className="tile-book p-0">
+                                <a href="#">
+                                    <img className="tile-book-cover" src={book.cover} />
+                                    <div className="tile-book-content d-flex flex-column">
+                                        <h3>{book.title}</h3>
+                                        <p>{book.author}</p>
+                                    </div>
+                                </a>
                             </div>
-                        </>
+                        </div>
                     })}
                 </div>
 

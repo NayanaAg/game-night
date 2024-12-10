@@ -1,16 +1,11 @@
 import React, { useCallback, useState } from "react";
-import { PieChart, Pie, Sector } from "recharts";
-import Library from "../library.json";
-import "../stats/stats.css";
+import { ResponsiveContainer, PieChart, Pie, Sector } from "recharts";
 import DataGenerator from "./count";
 
 
 export default function GenreChart() {
 
-    // const pieData = <DataGenerator p="genre" />
     const pieData = DataGenerator("genre");
-
-    // const pieData = DataSummarizer("genre");
 
     const renderActiveShape = (props: any) => {
         const RADIAN = Math.PI / 180;
@@ -39,8 +34,8 @@ export default function GenreChart() {
 
         return <>
             <g>
-                <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>
-                    {payload.name}
+                <text x={cx} y={cy} dy={8} textAnchor="middle" fill={"#000"} fontSize={"1.1em"}>
+                    {payload.name + ` (${((payload.percentage)).toFixed(2)}%)`}
                 </text>
                 <Sector
                     cx={cx}
@@ -60,27 +55,7 @@ export default function GenreChart() {
                     outerRadius={outerRadius + 10}
                     fill={"lightgreen"}
                 />
-                <path
-                    d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
-                    stroke={fill}
-                    fill="none"
-                />
-                <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
-                <text
-                    x={ex + (cos >= 0 ? 1 : -1) * 12}
-                    y={ey}
-                    textAnchor={textAnchor}
-                    fill="#333"
-                >{payload.name}</text>
-                <text
-                    x={ex + (cos >= 0 ? 1 : -1) * 12}
-                    y={ey}
-                    dy={18}
-                    textAnchor={textAnchor}
-                    fill="#999"
-                >
-                    {`(${((payload.percentage)).toFixed(2)}%)`}
-                </text>
+
             </g>
         </>;
     };
@@ -95,19 +70,20 @@ export default function GenreChart() {
 
     /*actual pie chart rendering*/
     return <>
-        <PieChart width={750} height={450}>
-            <Pie
-                activeIndex={activeIndex}
-                activeShape={renderActiveShape}
-                data={pieData}
-                cx={250}
-                cy={200}
-                innerRadius={120}
-                outerRadius={150}
-                fill="green"
-                dataKey="value"
-                onMouseEnter={onPieEnter}
-            />
-        </PieChart>
+        <ResponsiveContainer width="100%" height={450}>
+            <PieChart >
+                <Pie
+                    activeIndex={activeIndex}
+                    activeShape={renderActiveShape}
+                    data={pieData}
+                    innerRadius={120}
+                    outerRadius={150}
+                    fill="green"
+                    dataKey="value"
+                    onMouseEnter={onPieEnter}
+
+                />
+            </PieChart>
+        </ResponsiveContainer>
     </>
 }

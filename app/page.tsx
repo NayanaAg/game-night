@@ -20,7 +20,7 @@ export default function Page() {
             <main>
                 <section>
                     <div className="row mt-5">
-                        <div className="col-6 offset-1">
+                        <div className="col-lg-6 offset-lg-3 col-10 offset-1">
                             <h1>My 50 books of 2024</h1>
                             <p>My goal this year was lofty: read 50 books and record at least some rudimentary thoughts about each one. As you can tell, I'm both ambitious and a little bit behind schedule. To motivate myself to keep going and hit my goal (or at least get as close as possible!) I decided to make this little website to track my reading progress, reviews, and some fun stats. </p>
                         </div>
@@ -32,22 +32,21 @@ export default function Page() {
 
                 <section>
                     <div className="container-fluid d-flex justify-content-center">
-                        <div className="row row-cols-5 text-center tile-container">
+                        <div className="row row-cols-lg-5 text-center tile-container">
                             {Library.slice(0, 5).map((book) => {
-                                return <>
-                                    <div className="col p-0" key={"book_" + book.id}>
-                                        <div key={book.id} className="tile-book">
-                                            <a href="./reviews">
-                                                <img className="tile-book-cover" src={book.cover}
-                                                    alt="book cover" />
-                                                <div className="tile-book-content d-flex flex-column">
-                                                    <h4>{book.title}</h4>
-                                                    <p>{book.author}</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                return <div className="col p-0" key={"book_" + book.id}>
+                                    <div key={book.id} className="tile-book">
+                                        <a href="./reviews">
+                                            <img className="tile-book-cover" src={book.cover}
+                                                alt="book cover" />
+                                            <div className="tile-book-content d-flex flex-column">
+                                                <h4>{book.title}</h4>
+                                                <p>{book.author}</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                </>
+                                </div>
+
                             })}
                         </div>
                     </div>
@@ -56,17 +55,17 @@ export default function Page() {
                 <hr />
 
                 <section>
-                    <div className="row my-5">
-                        <div className="col-3 offset-2 text-center">
+                    <div className="row my-5 my-sm-3">
+                        <div className="col-lg-3 offset-lg-2 col-12 p-5 text-center">
                             <img className="review-cover" src={reviewBook.cover} />
                         </div>
-                        <div className="col-4">
+                        <div className="col-lg-4 col-12 text-center p-5">
                             <h2>{reviewBook.title}</h2>
                             <p>{reviewBook.author}</p>
                             <FluentProvider theme={webLightTheme}>
                                 <RatingDisplay value={reviewBook.rating} size="large" color="marigold" />
                             </FluentProvider>
-                            <div className="mt-4">
+                            <div className="mt-lg-4 mt-3">
                                 <p>After hearing about this book for years, I'm so happy I finally picked it up. The writing style, pacing, and setting all work together with the original concept of David Copperfield to make it one of the most unique and memorable books I've read (and that's saying something because I usually forget details about books as soon as I pick a new one up).</p>
 
                                 <p>It felt a bit strange reading a "modernization" of an old classic which, from current day, is still pretty old. Throughout the book I found myself wondering why Kingsolver chose the 90s, and how the story would be different in present day. In the end though, I was glad it had the 90s retro-ish vibe along with the political problems and pressures which eventually exploded into our current society.</p>
