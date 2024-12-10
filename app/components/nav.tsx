@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function GlobalNav() {
     return <>
@@ -7,11 +8,11 @@ export default function GlobalNav() {
                 <header>
                     <div id="global-nav">
                         <ul>
-                            <li><a href="./">home</a></li>
-                            <li><a href="./reviews">reviews</a></li>
-                            <li><a href="./find-a-book">find your next read</a></li>
-                            <li><a href="./recommend">recommend a book</a></li>
-                            <li><a href="./about">about</a></li>
+                            <li><Link href="/">home</Link></li>
+                            <li><Link href="/reviews">reviews</Link></li>
+                            <li><Link href="/find-a-book">find your next read</Link></li>
+                            <li><Link href="/stats">stats and graphs</Link></li>
+                            <li><Link href="/about">about</Link></li>
                         </ul>
                     </div>
                 </header>
