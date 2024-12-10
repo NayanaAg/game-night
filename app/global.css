@@ -15,11 +15,11 @@
     --mdbold: 500;
 
     /*spacing*/
-    --xs-space: 0.5em;
+    --xs-space: 1em;
     --sm-space: calc(var(--xs-space) * 1.25);
     --md-space: calc(var(--xs-space) * 1.5);
-    --lg-space: calc(var(--xs-space) * 2);
-    --xl-space: calc(var(--xs-space) * 3);
+    --lg-space: calc(var(--xs-space) * 2.5);
+    --xl-space: calc(var(--xs-space) * 4);
 
     --transition-time: 0.75s ease;
     --drop-shadow: 5px 10px 7px #888888;
@@ -59,16 +59,12 @@ h3 {
     padding: 10px 20px;
 }
 
-.sidebar {
-    background-color: antiquewhite !important;
-    height: 100vw;
-    position: sticky;
-    top: 0;
+.tile-container {
+    margin: var(--md-space) var(--xl-space);
 }
 
 .tile-book {
     padding: var(--xs-space);
-    background-color: white;
     transition: var(--transition-time) ease;
     border-radius: 10px;
 }
@@ -85,6 +81,7 @@ h3 {
 
 .tile-book-content {
     margin-top: 5px;
+    overflow: auto;
 }
 
 .tile-book-content h4 {
@@ -95,7 +92,6 @@ h3 {
 
 .tile-book-cover {
     width: 200px;
-    height: 300px;
+    height: 300px; 
     object-fit: cover;
-    margin: 0 auto;
 }

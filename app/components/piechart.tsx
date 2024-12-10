@@ -2,28 +2,12 @@ import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
 import Library from "../library.json";
 import "../stats/stats.css";
-
-const genreList = Library.map(book => book.genre)
-const allGenres = genreList.join().split(",")
-const uniqueGenres = [...new Set(allGenres)]
+import DataGenerator from "./count";
 
 
 export default function GenreChart() {
 
-    /*where the count function is*/
-    function CountGenre(genrelist, genre) {
-        let counter = 0
-
-        for (const value of genrelist) {
-            if (value === genre) counter += 1
-        } return counter
-    }
-
-    /*where the dataset for the function is*/
-    const Piechart = []
-    for (let genre of uniqueGenres) {
-        Piechart.push({ "name": genre, "value": CountGenre(allGenres, genre) })
-    }
+    const pieData = <DataGenerator value="genre" />
 
     const renderActiveShape = (props: any) => {
         const RADIAN = Math.PI / 180;
@@ -84,7 +68,7 @@ export default function GenreChart() {
                     y={ey}
                     textAnchor={textAnchor}
                     fill="#333"
-                >{CountGenre(allGenres, payload.name)}</text>
+                >{payload.name}</text>
                 <text
                     x={ex + (cos >= 0 ? 1 : -1) * 12}
                     y={ey}
@@ -92,7 +76,7 @@ export default function GenreChart() {
                     textAnchor={textAnchor}
                     fill="#999"
                 >
-                    {`(${(CountGenre(allGenres, payload.name)/(Library.length)).toFixed(2)}%`}
+                    {`(${((payload.value)/(Library.length)).toFixed(2)}%`}
                 </text>
             </g>
         </>;
@@ -112,7 +96,7 @@ export default function GenreChart() {
             <Pie
                 activeIndex={activeIndex}
                 activeShape={renderActiveShape}
-                data={Piechart}
+                data={""}
                 cx={250}
                 cy={200}
                 innerRadius={120}
