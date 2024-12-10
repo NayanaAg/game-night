@@ -4,16 +4,38 @@
     padding: 0;
 }
 
+:root {
+    /*typography*/
+    --h1-size: 2.5em;
+    --h2-size: 1.75em;
+    --h3-size: 1.2em;
+    --body-size: 1em;
+
+    --xbold: 800;
+    --mdbold: 500;
+
+    /*spacing*/
+    --xs-space: 0.5em;
+    --sm-space: calc(var(--xs-space) * 1.25);
+    --md-space: calc(var(--xs-space) * 1.5);
+    --lg-space: calc(var(--xs-space) * 2);
+    --xl-space: calc(var(--xs-space) * 3);
+
+    --transition-time: 0.75s ease;
+    --drop-shadow: 5px 10px 7px #888888;
+}
+
 h1 {
-    font-size: 2em;
+    font-size: var(--h1-size);
+    font-weight: var(--xbold);
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: var(--h2-size);
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: var(--h3-size);
 }
 
 #global-nav {
@@ -45,14 +67,13 @@ h3 {
 }
 
 .tile-book {
-    margin: var(--sm-space);
-    padding: 0;
+    padding: var(--xs-space);
     background-color: white;
     transition: var(--transition-time) ease;
     border-radius: 10px;
 }
 
-.tile-book hover {
+.tile-book:hover {
     box-shadow: var(--drop-shadow) !important;
     cursor: pointer !important;
 }
@@ -67,7 +88,7 @@ h3 {
 }
 
 .tile-book-content h4 {
-    font-size: 1em;
+    font-size: var(--body-size);
     text-decoration: none;
     color: black;
 }
@@ -76,4 +97,5 @@ h3 {
     width: 200px;
     height: 300px;
     object-fit: cover;
+    margin: 0 auto;
 }
