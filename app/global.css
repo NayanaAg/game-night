@@ -52,6 +52,22 @@ h3 {
     font-size: var(--h3-size);
 }
 
+.btn-filter {
+    background-color: var(--light-color) !important;
+    border: 2px solid var(--accent) !important;
+    color: var(--dark-color) !important;
+    font-weight: var(--mdbold) !important;
+}
+
+.btn-filter:hover {
+    background-color: var(--accent) !important;
+}
+
+.btn-focus {
+    background-color: var(--accent) !important;
+    font-weight: var(--mdbold) !important;
+}
+
 #global-nav {
     background-color: var(--dark-color);
     padding: var(--xs-space);
@@ -116,4 +132,31 @@ h3 {
     width: 200px;
     height: 300px;
     object-fit: cover;
+}
+
+#profile-pic {
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: var(--lg-space);
+}
+
+#contact-form {
+    padding: var(--lg-space);
+    margin: var(--xl-space);
+    border-radius: 20px;
+    border: 2px solid var(--light-color);
+}
+
+#contact-form label {
+    margin-top: var(--sm-space);
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: var(--accent);
+    color: black;
+    border: none;
+    margin-top: var(--lg-space) !important;
+    padding: 10px;
 }

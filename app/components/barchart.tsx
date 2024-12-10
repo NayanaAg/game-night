@@ -25,8 +25,8 @@ export default function RatingChart() {
         <Tooltip />
         <Bar
           dataKey="value"
-          fill="#f8d243"
-          activeBar={<Rectangle fill="var(--accent-dark)"/>}
+          fill="#2f97d6"
+          activeBar={<Rectangle fill="#8acff9"/>}
         />
       </BarChart>
     </ResponsiveContainer>
