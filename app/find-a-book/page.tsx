@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
 import GlobalNav from "../components/nav";
 import Library from "../library.json";
-import { RatingDisplay } from "@fluentui/react-components";
 
 export default function Page() {
 
@@ -13,24 +12,43 @@ export default function Page() {
     const allGenres = genreList.join().split(",")
     const uniqueGenres = [...new Set(allGenres)]
 
-    const shuffledLibrary = Library.slice(0);
-
-    for (let i = shuffledLibrary.length - 1; i > 0; i--) {
-        const Random = Math.floor(Math.random() * (i + 1));
-
-        const temp = shuffledLibrary[i]
-        shuffledLibrary[i] = shuffledLibrary[Random]
-        shuffledLibrary[Random] = temp
-    }
-
     const [filter, setFilter] = useState("");
+    const [library, setLibrary] = useState([]);
 
+    useEffect(() => {
+
+        generateList();
+
+    }, [filter]);
+
+    const generateList = () => {
+
+        const tempLibrary = [];
+        Library.map((lo, li) => {
+
+            const genres = lo.genre.split(",");
+
+            if (genres.indexOf(filter) > -1) {
+                tempLibrary.push(lo);
+            }
+        })
+
+        tempLibrary.sort(() => .5 - Math.random());
+        setLibrary(tempLibrary.slice(0, 5));
+    }
 
     return <>
         <div id="container">
             <GlobalNav />
 
             <div className="row">
+                <div className="col-10 offset-1">
+                    <h1>My book recommendations</h1>
+                    <p></p>
+                </div>
+            </div>
+
+            <div className="row mt-5">
                 <div className="col-10 offset-1">
                     {uniqueGenres.map(genre =>
                         <a href="#" className={"btn p-3 m-2 btn-primary " + (genre === filter ? "btn-focus" : "")} id="genre" onClick={(e) => { setFilter(genre) }
@@ -41,41 +59,27 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="row row-cols-4 mx-5 my-4">
-
-                {shuffledLibrary.map((book, length) => {
-
-                    if (book.genre.indexOf(filter) === -1) {
-                        return <></>
-                    } else {
-                        length += 1;
-                    }
-
-                    if (length >= 5) {
-                        return <></>
-                    }
-
-                    return <>
-
-                        <div className="col">
-                            <div key={book.id} className="tile-book p-0">
-                                <a href="#">
-                                    <img className="tile-book-cover" src={book.cover} />
-                                    <div className="tile-book-content d-flex flex-column justify-content-between">
-                                        <h3>{book.title}</h3>
-                                        <p>{book.author}</p>
-                                    </div>
-                                </a>
+            <div className="container-fluid mt-3 d-flex justify-content-center">
+                <div className="row row-cols-5 text-center tile-container">
+                    {library.map((book, length) => {
+                        return <>
+                            <div className="col" key={"book_" + book.id}>
+                                <div className="tile-book p-0">
+                                    <a href="#">
+                                        <img className="tile-book-cover" src={book.cover} />
+                                        <div className="tile-book-content d-flex flex-column">
+                                            <h3>{book.title}</h3>
+                                            <p>{book.author}</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </>
+                    })}
+                </div>
 
-                    </>
-
-                })}
-            </div>
-
+            </div >
         </div>
-
 
     </>
 }

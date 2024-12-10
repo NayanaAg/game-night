@@ -31,23 +31,25 @@ export default function Page() {
                 </section>
 
                 <section>
-                    <div className="row row-cols-md-4 row-cols m-4 align-items-start justify-content-evenly flex-row">
-                        {Library.slice(0, 5).map((book) => {
-                            return <>
-                                <div className="col p-0" key={"book_" + book.id}>
-                                    <div key={book.id} className="tile-book d-flex justify-content-center">
-                                        <a href="./reviews">
-                                            <img className="tile-book-cover" src={book.cover}
-                                                alt="book cover" />
-                                            <div className="tile-book-content d-flex flex-column">
-                                                <h4>{book.title}</h4>
-                                                <p>{book.author}</p>
-                                            </div>
-                                        </a>
+                    <div className="container-fluid d-flex justify-content-center">
+                        <div className="row row-cols-5 text-center tile-container">
+                            {Library.slice(0, 5).map((book) => {
+                                return <>
+                                    <div className="col p-0" key={"book_" + book.id}>
+                                        <div key={book.id} className="tile-book">
+                                            <a href="./reviews">
+                                                <img className="tile-book-cover" src={book.cover}
+                                                    alt="book cover" />
+                                                <div className="tile-book-content d-flex flex-column">
+                                                    <h4>{book.title}</h4>
+                                                    <p>{book.author}</p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </>
-                        })}
+                                </>
+                            })}
+                        </div>
                     </div>
                 </section>
 
@@ -55,15 +57,27 @@ export default function Page() {
 
                 <section>
                     <div className="row my-5">
-                        <div className="col-3 offset-2">
+                        <div className="col-3 offset-2 text-center">
                             <img className="review-cover" src={reviewBook.cover} />
                         </div>
-                        <div className="col-5">
+                        <div className="col-4">
                             <h2>{reviewBook.title}</h2>
                             <p>{reviewBook.author}</p>
                             <FluentProvider theme={webLightTheme}>
                                 <RatingDisplay value={reviewBook.rating} size="large" color="marigold" />
                             </FluentProvider>
+                            <div className="mt-4">
+                                <p>After hearing about this book for years, I'm so happy I finally picked it up. The writing style, pacing, and setting all work together with the original concept of David Copperfield to make it one of the most unique and memorable books I've read (and that's saying something because I usually forget details about books as soon as I pick a new one up).</p>
+
+                                <p>It felt a bit strange reading a "modernization" of an old classic which, from current day, is still pretty old. Throughout the book I found myself wondering why Kingsolver chose the 90s, and how the story would be different in present day. In the end though, I was glad it had the 90s retro-ish vibe along with the political problems and pressures which eventually exploded into our current society.</p>
+
+                                <p>I'm not a big classics rereader because personally, I always find them to be pale or superficial versions of the original. I think there are a lot of topics and concepts that authors hesitate to include in books because of how much the world has changed in the last couple decades. Demon Copperhead was a refreshing change from all that, and conveyed the original themes while still staying original and maintaining the emotional impact. I just wish Charles Dickens had been able to read this! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-8 offset-2 text-center">
+                            <p><em>More full(ish) reviews for my books coming soon!</em></p>
                         </div>
                     </div>
                 </section>

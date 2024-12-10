@@ -1,9 +1,9 @@
 import React from "react";
 import Library from "../library.json";
 
-export default function DataGenerator(props) {
+export default function DataGenerator(property) {
 
-    const extractValues = Library.map(book => book[(props.value)])
+    const extractValues = Library.map(book => book[(property)])
     const allValues = extractValues.join().split(",")
     const uniqueValues = [...new Set(allValues)]
 
@@ -18,10 +18,49 @@ export default function DataGenerator(props) {
     const dataSet = []
 
     for (let value of uniqueValues) {
-        dataSet.push({"name": value, "value": Counter(allValues, value)})
+        dataSet.push({"name": value, "value": Counter(allValues, value), "percentage": (Counter(allValues, value) / allValues.length * 100)})
     }
 
     return dataSet
 }
+
+// export function DataSummarizer(property) {
+
+// CK INTERPRETATION OF THE ABOVE CODE
+
+//     const summary = {};
+//     const dataSet = [];
+
+//     Library.map((lo,li) => {
+        
+//         if (lo[property]) {
+
+//             const values = lo[property].split(",");
+//             values.map((vo,vi) => {
+
+//                 if (summary[vo] === undefined) {
+//                     summary[vo] = 0;
+//                 }
+//                 summary[vo]++;
+
+//             });
+
+//         }
+
+//     })
+    
+//     Object.keys(summary).map((so, si) => {
+
+//         dataSet.push({
+//             name: so,
+//             value: summary[so]
+//         })
+
+//     });
+
+//     console.log(dataSet);
+
+
+// }
 
 

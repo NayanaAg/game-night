@@ -7,7 +7,10 @@ import DataGenerator from "./count";
 
 export default function GenreChart() {
 
-    const pieData = <DataGenerator value="genre" />
+    // const pieData = <DataGenerator p="genre" />
+    const pieData = DataGenerator("genre");
+
+    // const pieData = DataSummarizer("genre");
 
     const renderActiveShape = (props: any) => {
         const RADIAN = Math.PI / 180;
@@ -76,7 +79,7 @@ export default function GenreChart() {
                     textAnchor={textAnchor}
                     fill="#999"
                 >
-                    {`(${((payload.value)/(Library.length)).toFixed(2)}%`}
+                    {`(${((payload.percentage)).toFixed(2)}%)`}
                 </text>
             </g>
         </>;
@@ -96,7 +99,7 @@ export default function GenreChart() {
             <Pie
                 activeIndex={activeIndex}
                 activeShape={renderActiveShape}
-                data={""}
+                data={pieData}
                 cx={250}
                 cy={200}
                 innerRadius={120}

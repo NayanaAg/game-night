@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +7,19 @@
 }
 
 :root {
+    --light-color: #f6f6f6;
+    --dark-color: #2b2b2b;
+    --accent: #48cb46;
+    --accent-dark: #1b791a;
+
     /*typography*/
     --h1-size: 2.5em;
     --h2-size: 1.75em;
     --h3-size: 1.2em;
     --body-size: 1em;
+
+    --heading-font: "Eczar", serif;
+    --body-font: "Roboto", sans-serif;
 
     --xbold: 800;
     --mdbold: 500;
@@ -25,9 +35,13 @@
     --drop-shadow: 5px 10px 7px #888888;
 }
 
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
 h1 {
     font-size: var(--h1-size);
-    font-weight: var(--xbold);
+    font-weight: var(--xbold) !important;
 }
 
 h2 {
@@ -39,8 +53,8 @@ h3 {
 }
 
 #global-nav {
-    background-color: lightblue !important;
-    padding: 10px;
+    background-color: var(--dark-color);
+    padding: var(--xs-space);
 }
 
 #global-nav ul {
@@ -55,11 +69,19 @@ h3 {
 
 #global-nav a {
     text-decoration: none;
-    color: black;
-    padding: 10px 20px;
+    color: var(--light-color);
+    font-weight: var(--mdbold);
+    padding: var(--xs-space);
+    transition: var(--transition-time);
+}
+
+#global-nav a:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 .tile-container {
+    width: 60vw;
     margin: var(--md-space) var(--xl-space);
 }
 
@@ -92,6 +114,6 @@ h3 {
 
 .tile-book-cover {
     width: 200px;
-    height: 300px; 
+    height: 300px;
     object-fit: cover;
 }
