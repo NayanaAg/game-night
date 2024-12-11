@@ -11,7 +11,7 @@ This website is a reading log to track the books I read this year. It includes:
 
 
 ## Notes on getting set up
-**This website uses react and Next.js for building pages and managing packages**.
+**This website uses React and Next.js for building pages and managing packages**.
 
 I used a few packages, and some of them are quite complex so it's important to keep note of package conflicts. I made sure each package had a robust community of developers behind it and was actively being updated to make sure my project remains supported in the future.
 
