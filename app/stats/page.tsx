@@ -4,9 +4,11 @@ import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
 import GlobalNav from "../components/nav";
+import Footer from "../components/footer";
+
 import GenreChart from "../components/piechart";
 import RatingChart from "../components/barchart";
-import { Rating } from "@fluentui/react-components";
+
 
 export default function Page() {
   return <>
@@ -20,33 +22,38 @@ export default function Page() {
         </div>
       </div>
 
-      <section>
-        <div className="row mt-lg-5 d-flex justify-content-center">
-          <div className="col-lg-4 ms-lg-5 col-12">
-            <GenreChart />
+      <main>
 
-          </div>
-          <div className="col-lg-4 mt-lg-5 m-3 p-3 col-12">
-            <h2>Genre spread</h2>
-            <p>This year, my top 3 genres have been historical, mystery, and literary! I would include Fiction but turns out I didn't read much non-fiction this year lol, so it stays out of our count despite being in first place.</p>
+        <section>
+          <div className="row mt-lg-5 d-flex justify-content-center">
+            <div className="col-lg-4 ms-lg-4 me-md-5 col-12">
+              <GenreChart />
 
-            <p>I was surprised to see that my science fiction and speculative fiction counts are so low this year; I usually end up reading a good handful of each genre over the year, but looks like this year I was craving something more down-to-earth.</p>
-          </div>
-        </div>
-      </section>
+            </div>
+            <div className="col-lg-4 mt-lg-5 p-3 col-12">
+              <h2>Genre spread</h2>
+              <p>This year, my top 3 genres have been historical, mystery, and literary! I would include Fiction but turns out I didn't read much non-fiction this year lol, so it stays out of our count despite being in first place.</p>
 
-      <section>
-        <div className="row mt-5 d-flex justify-content-center">
-          <div className="col-lg-4 ms-lg-5 col-12">
-            <RatingChart />
+              <p>I was surprised to see that my science fiction and speculative fiction counts are so low this year; I usually end up reading a good handful of each genre over the year, but looks like this year I was craving something more down-to-earth.</p>
+            </div>
           </div>
+        </section>
 
-          <div className="col-lg-4 m-3 p-3 col-12">
-            <h2>Ratings</h2>
-            <p>Luckily, I read mostly good books this year! I think I've gotten better at identifying which books I'll like from the blurb, description, and other trusted people's reviews. Unfortunately a mediocre book sneaks in every now and then (I'm still disappointed by how much I disliked City of Brass D:) but at least we didn't have any one-star reads this year!</p>
+        <section>
+          <div className="row mt-lg-5 d-flex justify-content-center">
+            <div className="col-lg-4 ms-lg-4 me-md-5 col-12">
+              <RatingChart />
+            </div>
+
+            <div className="col-lg-4 mt-lg-5 p-3 col-12">
+              <h2>Ratings</h2>
+              <p>Luckily, I read mostly good books this year! I think I've gotten better at identifying which books I'll like from the blurb, description, and other trusted people's reviews. Unfortunately a mediocre book sneaks in every now and then (I'm still disappointed by how much I disliked City of Brass D:) but at least we didn't have any one-star reads this year!</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
+
+      <Footer />
     </div>
 
   </>

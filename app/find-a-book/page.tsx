@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
 import GlobalNav from "../components/nav";
+import Footer from "../components/footer";
 import Library from "../library.json";
 
 import { FluentProvider, webLightTheme, RatingDisplay } from '@fluentui/react-components';
@@ -44,10 +45,9 @@ export default function Page() {
             <GlobalNav />
 
             <div className="row">
-                <div className="col-10 offset-1 text-center mt-5">
+                <div className="col-10 offset-1 col-lg-8 offset-lg-2 text-center mt-5">
                     <h1>My book recommendations</h1>
-                    <p>Click one of the buttons below to get some random book recommendations!</p>
-                    <p>You can also click on the books to see my rating and a few keywords that I think describe the book well (I tried my best to be objective, whether I liked the book or not!) </p>
+                    <p>Click one of the buttons below to get some random book recommendations! You can also click on the books to see my rating and a few keywords that I think describe the book well (I tried my best to be objective, whether I liked the book or not!) </p>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@ export default function Page() {
                     {library.map((book) => {
                         return <div className="col tile-book text-center" key={"book_" + book.id}>
                         <div data-bs-toggle="modal" data-bs-target={"#book_" + (book.id).toString()}>
-                            <img className="tile-book-cover" src={book.cover} />
+                            <img className="tile-book-fixed" src={book.cover} />
                         </div>
 
                         <div className="modal fade" id={"book_" + (book.id).toString()} tabIndex={-1} aria-labelledby="book-modal-label" aria-hidden="true">
@@ -93,6 +93,8 @@ export default function Page() {
                 </div>
 
             </div >
+
+            <Footer />
         </div>
 
     </>

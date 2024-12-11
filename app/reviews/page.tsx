@@ -4,6 +4,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
 import GlobalNav from "../components/nav";
+import Footer from "../components/footer";
 import Library from "../library.json";
 
 import { FluentProvider, webLightTheme, RatingDisplay } from '@fluentui/react-components';
@@ -23,11 +24,11 @@ export default function Page() {
             </div>
 
             <div className="container-fluid d-flex justify-content-center">
-                <div className="row row-cols-lg-5 text-center tile-container">
+                <div className="row row-cols-5 text-center tile-container">
                     {Library.map((book) => {
-                        return <div className="col tile-book text-center" key={"book_" + book.id}>
+                        return <div className="col g-3 tile-book text-center" key={"book_" + book.id}>
                             <div data-bs-toggle="modal" data-bs-target={"#book_" + (book.id).toString()}>
-                                <img className="tile-book-cover" src={book.cover} />
+                                <img className="tile-book-fixed" src={book.cover} />
                             </div>
 
                             <div className="modal fade" id={"book_" + (book.id).toString()} tabIndex={-1} aria-labelledby="book-modal-label" aria-hidden="true">
@@ -54,6 +55,9 @@ export default function Page() {
                     })}
                 </div>
             </div>
+
+            <Footer />
+
         </div>
 
 

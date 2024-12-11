@@ -31,13 +31,13 @@ export default function Page() {
                 </section>
 
                 <section>
-                    <div className="container-fluid d-flex justify-content-center">
-                        <div className="row row-cols-lg-5 text-center tile-container">
+                    <div className="container-fluid mt-4 d-flex justify-content-center">
+                        <div className="row row-cols row-cols-xl-5 text-center tile-container">
                             {Library.slice(0, 5).map((book) => {
                                 return <div className="col p-0" key={"book_" + book.id}>
                                     <div key={book.id} className="tile-book">
                                         <a href="./reviews">
-                                            <img className="tile-book-cover" src={book.cover}
+                                            <img className="tile-book-flex" src={book.cover}
                                                 alt="book cover" />
                                             <div className="tile-book-content d-flex flex-column">
                                                 <h4>{book.title}</h4>
@@ -59,7 +59,7 @@ export default function Page() {
                         <div className="col-lg-3 offset-lg-2 col-12 p-5 text-center">
                             <img className="review-cover" src={reviewBook.cover} />
                         </div>
-                        <div className="col-lg-4 col-12 text-center p-5">
+                        <div className="col-lg-5 col-12 text-center p-5">
                             <h2>{reviewBook.title}</h2>
                             <p>{reviewBook.author}</p>
                             <FluentProvider theme={webLightTheme}>
