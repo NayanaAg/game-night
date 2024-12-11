@@ -4,6 +4,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.css";
 import GlobalNav from "./components/nav";
+import Footer from "./components/footer";
 import Library from "./library.json";
 
 import { FluentProvider, webLightTheme, RatingDisplay } from '@fluentui/react-components';
@@ -32,7 +33,7 @@ export default function Page() {
 
                 <section>
                     <div className="container-fluid mt-4 d-flex justify-content-center">
-                        <div className="row row-cols row-cols-xl-5 text-center tile-container">
+                        <div className="row row-cols row-cols-lg-5 text-center tile-container">
                             {Library.slice(0, 5).map((book) => {
                                 return <div className="col p-0" key={"book_" + book.id}>
                                     <div key={book.id} className="tile-book">
@@ -81,6 +82,8 @@ export default function Page() {
                     </div>
                 </section>
             </main>
+
+            <Footer />
         </div >
 
     </>

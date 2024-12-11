@@ -30,7 +30,7 @@ export default function Page() {
               <GenreChart />
 
             </div>
-            <div className="col-lg-4 mt-lg-5 p-3 col-12">
+            <div className="col-lg-4 mt-lg-5 px-5 p-lg-3 col-12">
               <h2>Genre spread</h2>
               <p>This year, my top 3 genres have been historical, mystery, and literary! I would include Fiction but turns out I didn't read much non-fiction this year lol, so it stays out of our count despite being in first place.</p>
 
@@ -41,11 +41,11 @@ export default function Page() {
 
         <section>
           <div className="row mt-lg-5 d-flex justify-content-center">
-            <div className="col-lg-4 ms-lg-4 me-md-5 col-12">
+            <div className="col-lg-4 ms-lg-4 mt-5 me-md-5 col-12">
               <RatingChart />
             </div>
 
-            <div className="col-lg-4 mt-lg-5 p-3 col-12">
+            <div className="col-lg-4 mt-lg-5 p-5 p-lg-3 col-12">
               <h2>Ratings</h2>
               <p>Luckily, I read mostly good books this year! I think I've gotten better at identifying which books I'll like from the blurb, description, and other trusted people's reviews. Unfortunately a mediocre book sneaks in every now and then (I'm still disappointed by how much I disliked City of Brass D:) but at least we didn't have any one-star reads this year!</p>
             </div>

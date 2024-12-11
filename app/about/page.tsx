@@ -11,13 +11,13 @@ export default function Page() {
 
             <main>
                 <div className="row align-items-center mt-5">
-                    <div className="col-5 d-flex flex-column align-items-center offset-1">
+                    <div className="col-lg-5 offset-lg-1 col-12 px-4 d-flex flex-column align-items-center ">
                         <img src="./images/me.jpg" alt="photo of me!" id="profile-pic" />
                         <h1>recommend me a book!</h1>
                         <p>I'm always looking for new books or authors that have flown under my radar, so you would be doing me a real solid :)</p>
                     </div>
 
-                    <div className="col-5">
+                    <div className="col-lg-5 col-12">
                         <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
 
                             <input type="hidden" name="access_key" value="18889202-c100-47e9-9a54-c558ac663cac" />

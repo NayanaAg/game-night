@@ -24,7 +24,7 @@ export default function Page() {
             </div>
 
             <div className="container-fluid d-flex justify-content-center">
-                <div className="row row-cols-5 text-center tile-container">
+                <div className="row row-cols row-cold-md-3 row-cols-lg-4 row-cols-xl-5 text-center tile-container">
                     {Library.map((book) => {
                         return <div className="col g-3 tile-book text-center" key={"book_" + book.id}>
                             <div data-bs-toggle="modal" data-bs-target={"#book_" + (book.id).toString()}>

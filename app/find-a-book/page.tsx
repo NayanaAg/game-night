@@ -54,14 +54,14 @@ export default function Page() {
             <div className="row mt-4 text-center">
                 <div className="col-lg-6 mx-auto col-10 offset-1">
                     {uniqueGenres.map(genre =>
-                        <a href="#" className={"btn px-3 py-2 m-2 btn-primary btn-filter" + (genre === filter ? " btn-focus" : "")} id="genre" onClick={(e) => { setFilter(genre) }
+                        <a href="#book-section" className={"btn px-3 py-2 m-2 btn-primary btn-filter" + (genre === filter ? " btn-focus" : "")} id="genre" onClick={(e) => { setFilter(genre) }
                         }>{genre}</a>
                     )}
                 </div>
             </div>
 
             <div className="container-fluid mt-5 d-flex justify-content-center">
-                <div className="row row-cols row-cols-lg-5 text-center justify-content-center tile-container">
+                <div id="book-section" className="row row-cols row-cols-lg-5 text-center justify-content-center tile-container">
                     {library.map((book) => {
                         return <div className="col tile-book text-center" key={"book_" + book.id}>
                         <div data-bs-toggle="modal" data-bs-target={"#book_" + (book.id).toString()}>
