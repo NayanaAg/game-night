@@ -3,11 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
 import GlobalNav from "../components/nav";
 import Footer from "../components/footer";
+import TopButton from "../components/top-btn";
 
 export default function Page() {
     return <>
         <div id="container">
             <GlobalNav />
+            <TopButton />
 
             <main>
                 <div className="row align-items-center mt-5">

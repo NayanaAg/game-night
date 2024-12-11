@@ -63,6 +63,14 @@ h3 {
     background-color: var(--accent) !important;
 }
 
+.btn-top {
+    color: var(--accent-dark) !important;
+}
+
+.btn-top:hover {
+    color: var(--accent) !important;
+}
+
 .btn-focus {
     background-color: var(--accent) !important;
     font-weight: var(--mdbold) !important;
@@ -214,7 +222,7 @@ h3 {
     color: var(--accent);
 }
 
-#footer i {
+i {
     font-size: 2em;
 }
 

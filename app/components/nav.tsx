@@ -9,7 +9,7 @@ export default function GlobalNav() {
                 <header>
                 <nav className="navbar navbar-dark navbar-expand-lg" id="global-nav">
                         <div className="container-fluid">
-                            <Link className="navbar-brand" href="/"><img src="../images/logo.png" alt="icon of open book" id="nav-logo" /></Link>
+                            <Link className="navbar-brand" href="/"><img src="./images/logo.png" alt="icon of open book" id="nav-logo" /></Link>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>

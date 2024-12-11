@@ -3,8 +3,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.css";
+
 import GlobalNav from "./components/nav";
 import Footer from "./components/footer";
+import TopButton from "./components/top-btn";
 import Library from "./library.json";
 
 import { FluentProvider, webLightTheme, RatingDisplay } from '@fluentui/react-components';
@@ -17,6 +19,7 @@ export default function Page() {
 
         <div id="container">
             <GlobalNav />
+            <TopButton />
 
             <main>
                 <section>

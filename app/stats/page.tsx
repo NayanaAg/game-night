@@ -3,8 +3,10 @@
 import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../global.css";
+
 import GlobalNav from "../components/nav";
 import Footer from "../components/footer";
+import TopButton from "../components/top-btn";
 
 import GenreChart from "../components/piechart";
 import RatingChart from "../components/barchart";
@@ -14,6 +16,7 @@ export default function Page() {
   return <>
     <div id="container">
       <GlobalNav />
+      <TopButton />
 
       <div className="row mt-5">
         <div className="col-10 offset-1">
